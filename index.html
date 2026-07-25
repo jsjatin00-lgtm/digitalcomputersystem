@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Digital Computer System — Authorized Tally Partner in Aligarh </title>
+  <meta name="description" content="Official partner website for Digital Computer System showcasing Tally products, pricing, and links to Tally Solutions." />
+  
+  <link rel="icon" href="images/tally-logo.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --card: #f8f9fa;
+      --muted: #5c677d;
+      --text: #1a1d23;
+      --brand: #006666;
+      --accent: #009999;
+      --shadow: 0 6px 20px rgba(0, 0, 0, .12);
+      --radius: 12px;
+      --gradient: linear-gradient(to right, #00BFFF, #4169E1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0 }
+    body {
+      font: 16px/1.6 "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text)
+    }
+    a {
+      color: var(--brand);
+      text-decoration: none
+    }
+    a:hover {
+      text-decoration: underline
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 20;
+      box-shadow: var(--shadow)
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .logo img {
+      height: 40px
+    }
+
+    .brand,
+    .hero h1,
+    .section h2,
+    .comparison h3,
+    .btn,
+    .buy-btn,
+    nav a {
+      background-image: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .brand {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
+    }
+
+    nav a {
+      margin-left: 18px;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 40px 0
+    }
+
+    .hero img {
+      width: 300px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow)
+    }
+
+    .hero p {
+      color: var(--muted)
+    }
+
+    .section {
+      margin: 50px 0
+    }
+
+    .section p.lead {
+      color: var(--muted);
+      margin-bottom: 20px
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px
+    }
+
+    .product {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      text-align: center
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: 12px
+    }
+
+    .product h3 {
+      margin-bottom: 6px;
+      color: #222
+    }
+
+    .product p {
+      color: var(--muted);
+      font-size: 14px
+    }
+	
+	.product a {
+	  color: #5d91e3;
+	  text-decoration: none;
+	}
+	.product a:hover {
+	  text-decoration: underline;
+	}
+
+    /* Pricing table */
+    .pricing {
+      overflow-x: auto
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left
+    }
+
+    th {
+      background: #f0f3f3;
+      color: #222
+    }
+
+    td {
+      background: #fff
+    }
+
+    .price {
+      font-weight: 800;
+      background-image: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      text-shadow: 0.5px 0.5px rgba(0,0,0,0.05);
+    }
+
+    /* Comparison Section */
+    .comparison {
+      margin-top: 30px;
+    }
+
+    .comparison table {
+      width: 100%;
+      border-collapse: collapse
+    }
+
+    .comparison th,
+    .comparison td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left
+    }
+
+    .comparison th {
+      background: #e9f3f3
+    }
+
+    .contact-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow)
+    }
+	.contact-card a {
+	  color: #5d91e3; /* blue */
+	  text-decoration: none;
+	}
+	.contact-card a:hover {
+	  text-decoration: underline;
+	}
+    iframe.map {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: var(--radius);
+      margin-top: 16px
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted)
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <img src="images/tally-logo.svg" alt="Tally Logo">
+        <span class="brand">Digital Computer System</span>
+      </div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>PRIME 7.1 LAUNCHED!</h1>
+        <h1>Tally Products — Official Partner</h1>
+        <p>Your trusted partner for TallyPrime, TallyPrime Server, Tally on Cloud, BizAnalyst, and more. Transparent pricing, authentic licenses, and direct links to Tally Solutions.</p>
+      </div>
+      <img src="images/tallyprime-hero.svg" alt="TallyPrime Hero Image">
+      <img src="images/tallyprime-hero-2.svg" alt="TallyPrime Hero Image">
+    </section>
+
+    <section id="products" class="section">
+      <h2>Our Products</h2>
+      <p class="lead">Explore the complete Tally product line available through Digital Computer System.</p>
+      <div class="products">
+        <!-- Product Cards -->
+        <div class="product">
+          <h3>TallyPrime</h3>
+          <p>Business management software for accounting, GST, inventory & more.</p>
+          <a href="https://tallysolutions.com/download/" target="_blank">Learn More</a>
+        </div>
+        <div class="product">
+          <h3>TallyPrime Gold</h3>
+          <p>Multi-user edition for growing businesses needing concurrent access.</p>
+          <a href="https://tallysolutions.com/download/" target="_blank">Learn More</a>
+        </div>
+        <div class="product">
+          <h3>BizAnalyst Mobile App</h3>
+          <p>Mobile app for Tally that helps you analyze business data, track sales, manage remotely.</p>
+          <a href="https://bizanalyst.in/" target="_blank">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing (INR)</h2>
+      <div class="pricing">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>License Type</th><th>Price (Excl. GST)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TallyPrime Silver</td><td>Single User (Lifetime)</td>
+              <td><a href="https://tallysolutions.com/buy-tally/" target="_blank" class="price">₹22,500</a></td>
+            </tr>
+            <tr>
+              <td>TallyPrime Gold</td><td>Multi User (Lifetime)</td>
+              <td><a href="https://tallysolutions.com/buy-tally/" target="_blank" class="price">₹67,500</a></td>
+            </tr>
+            <tr>
+              <td>TallyPrime on AWS</td><td>Cloud Access / User / Month</td>
+              <td><a href="https://tallysolutions.com/buy-tally/" target="_blank" class="price">From ₹600</a></td>
+            </tr>
+            <tr>
+              <td>Tally Software Services (TSS)</td><td>Annual Renewal Silver</td>
+              <td><a href="https://tallysolutions.com/buy-tally/" target="_blank" class="price">₹4,500</a></td>
+            </tr>
+            <tr>
+              <td>Tally Software Services (TSS)</td><td>Annual Renewal Gold</td>
+              <td><a href="https://tallysolutions.com/buy-tally/" target="_blank" class="price">₹13,500</a></td>
+            </tr>
+            <tr>
+              <td>BizAnalyst Mobile App</td><td>Annual / Per User</td>
+              <td><a href="https://bizanalyst.in/pricing" target="_blank" class="price">From ₹200/month</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="margin-top:10px;font-size:13px;">*Prices as per official Tally Solutions and BizAnalyst websites. GST extra as applicable.</p>
+      </div>
+    </section>
+
+    <section id="comparison" class="section">
+      <h2>Feature Comparison</h2>
+      <div class="comparison" id="comparisonTable">
+        <table>
+          <thead>
+            <tr><th>Features</th><th>TallyPrime</th><th>BizAnalyst Mobile</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Accounting & GST</td><td>✔️ Full accounting & GST</td><td>❌ View-only</td></tr>
+            <tr><td>Inventory Management</td><td>✔️ Yes</td><td>❌ View-only</td></tr>
+            <tr><td>Reports & Analysis</td><td>✔️ Detailed in desktop</td><td>✔️ Mobile-friendly reports</td></tr>
+            <tr><td>Sales Tracking</td><td>✔️ In software</td><td>✔️ Mobile app</td></tr>
+            <tr><td>Remote Access</td><td>✔️ via Cloud / RDP</td><td>✔️ Native mobile</td></tr>
+            <tr><td>User Management</td><td>✔️ Multi-user via Gold</td><td>✔️ Per user license</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p class="lead">Reach out for sales, demos, and support queries.</p>
+      <div class="contact-card">
+        <p><strong>Digital Computer System</strong></p>
+        <p>Agrawal Market, Railway Road, Aligarh</p>
+        <p>Email: <a href="mailto:info@digitalcomputersystem.in">info@digitalcomputersystem.in</a></p>
+        <p>Phone: <a href="tel:+919927073923">+91-9927073923</a></p>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28209.528758064233!2d78.06206430141928!3d27.896108547578418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a48f25978e6b%3A0x76bee2779bbcafc0!2sTally%20Partner%20%7C%20Aligarh%20%7C%20Digital%20Computer%20System!5e0!3m2!1sen!2sin!4v1757410024500!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Digital Computer System — Authorized Tally Partner</p>
+      <p>This site displays information sourced from Tally Solutions and BizAnalyst. For purchases, customers are redirected to official pages.</p>
+    </footer>
+  </main>
+</body>
+</html>
